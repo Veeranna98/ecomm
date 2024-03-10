@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Calc from "./Calc";
+import Add from "./Add";
+import Students from "./Students";
+import Sqr from "./Sqr";
+import User from "./User";
 function App() {
+  const sqrfunction = (n) => {
+    return n*n
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <User name="John"/>
+     <Calc a={3} b={5}/>
+     <Add arr={[5,6,8]} />
+     <Students score={{'John':40,'Cathy':50}}/>
+     <Sqr a={5} fn={sqrfunction}/>
     </div>
   );
 }
-
 export default App;
