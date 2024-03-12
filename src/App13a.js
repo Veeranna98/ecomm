@@ -1,4 +1,4 @@
-import { useState, createContext, useContext, startTransition } from "react";
+import { useState, createContext, useContext } from "react";
 import Childa from "./childa";
 
 export const UserContext = createContext();
@@ -8,8 +8,8 @@ export default function App13a() {
     <>
       <UserContext.Provider value={{ user, setUser }}>
         <h2>Hello {user} from App13 component</h2>
-     <Childa />
+        <Childa />
       </UserContext.Provider>
     </>
   );
-}startTransition
+}
