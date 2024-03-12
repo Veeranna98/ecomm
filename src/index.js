@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App20 from './App20';
 import "./App.js"
+import App21 from './App21.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   
-    <App20 />
+    <App21 />
   </React.StrictMode>
 );
 
