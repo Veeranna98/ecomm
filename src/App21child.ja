@@ -1,7 +1,7 @@
 import React from 'react'
 export default function App21child(props) {
   return (
-    <div style={{backgroundColor:'silver'}}>
+    <div style={{color:'silver'}}>
         {props.children}
     </div>
   )
